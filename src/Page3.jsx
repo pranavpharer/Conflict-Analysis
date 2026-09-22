@@ -123,7 +123,7 @@ const HeatmapLayer = ({ data }) => {
 
 const IntegratedHeatmap = () => {
   const mapRef = useRef(null);
-  const [map, setMap] = useState(null);
+  // const [map, setMap] = useState(null);
   const [geojsonData, setGeojsonData] = useState(null);
   const [markers, setMarkers] = useState([]);
   const [dateValue, setDateValue] = useState(0);
@@ -236,9 +236,8 @@ const IntegratedHeatmap = () => {
         center={[48.5, 37.5]}
         zoom={5}
         style={{ flex: 1 }}
-        whenReady={(map) => {
-          setMap(map.target);
-          mapRef.current = map.target;
+        whenReady={(event) => {
+          mapRef.current = event.target;
         }}
         maxBounds={[[-90, -180], [90, 180]]}
         minZoom={3}
