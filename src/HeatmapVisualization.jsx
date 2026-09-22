@@ -136,6 +136,7 @@ const HeatmapVisualization = ({ data }) => {
       map.removeControl(legend);
       // map.off('zoomend');
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [map, data]);
 
   return null;
