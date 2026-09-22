@@ -9,7 +9,7 @@ import 'leaflet.markercluster/dist/MarkerCluster.css';
 import 'leaflet.markercluster/dist/MarkerCluster.Default.css';
 import MarkerClusterGroup from 'react-leaflet-markercluster';
 
-const MapWithGeofencing_single = () => {
+const MapWithGeofencingSingle = () => {
   const [markers, setMarkers] = useState([]);
   const [geojsonData, setGeojsonData] = useState(null);
   const [displayMode, setDisplayMode] = useState('events'); // 'events' or 'fatalities'
@@ -293,9 +293,12 @@ const MapWithGeofencing_single = () => {
         zoom={5}
         style={{ flex: 1 }}
         // for event click feature
-        whenReady={(map) => {
-          setMap(map.target);
-          mapRef.current = map.target;
+        // whenReady={(map) => {
+        //   setMap(map.target);
+        //   mapRef.current = map.target;
+        // }}
+        whenReady={(event) => {
+            mapRef.current = event.target;
         }}
         maxBounds={[[-90, -180], [90, 180]]}
         minZoom={2}
@@ -489,4 +492,4 @@ const MapWithGeofencing_single = () => {
   );
 };
 
-export default MapWithGeofencing_single;
+export default MapWithGeofencingSingle;

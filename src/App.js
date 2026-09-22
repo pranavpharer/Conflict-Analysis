@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MapWithGeofencing from './MapWithGeofencing';
-import MapWithGeofencing_single from './Page1';
+import MapWithGeofencingSingle from './Page1';
 import ParallelCoordinatesPlot from './Page2';
 import IntegratedHeatmap from './Page3';
 import ThemeRiver from './Page4';
@@ -13,7 +13,7 @@ function App() {
     <Router basename={process.env.PUBLIC_URL || '/'}>
       <Routes>
         <Route path="/" element={<MapWithGeofencing />} />
-        <Route path="/geomap" element={<MapWithGeofencing_single />} />
+        <Route path="/geomap" element={<MapWithGeofencingSingle />} />
         <Route path="/pcp" element={<ParallelCoordinatesPlot />} />
         <Route path="/heatmap" element={<IntegratedHeatmap />} />
         <Route path="/themeriver" element={<ThemeRiver />} />
@@ -26,6 +26,4 @@ function App() {
 
 export default App;
 
-{/* <div style={{ height: '100vh', width: '100%' }}>
-<Page6 />
-</div> */}
+

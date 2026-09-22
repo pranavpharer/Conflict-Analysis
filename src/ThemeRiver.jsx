@@ -1,9 +1,16 @@
 
 import React, { useState, useEffect } from "react";
-import { AreaChart, Area, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer,   ReferenceLine,
-  ReferenceArea,
+import {
+  AreaChart,
+  Area,
+  XAxis,
+  YAxis,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
   Brush,
-  CartesianGrid } from "recharts";
+  CartesianGrid
+} from "recharts";
 
 const ThemeRiver = ({ data }) => {
   //states

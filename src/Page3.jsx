@@ -115,6 +115,7 @@ const HeatmapLayer = ({ data }) => {
       map.removeLayer(heatLayer);
       map.removeControl(legend);
     };
+     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [map, data]);
 
   return null;
