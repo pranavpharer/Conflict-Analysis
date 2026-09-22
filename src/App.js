@@ -10,7 +10,7 @@ import WordCloud from './Page6';
 
 function App() {
   return (
-    <Router basename="/Conflict-Analysis">
+    <Router basename={process.env.PUBLIC_URL || '/'}>
       <Routes>
         <Route path="/" element={<MapWithGeofencing />} />
         <Route path="/geomap" element={<MapWithGeofencing_single />} />
