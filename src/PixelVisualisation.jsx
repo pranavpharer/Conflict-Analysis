@@ -106,9 +106,9 @@ const SinglePixelVisualization = ({ data, title }) => {
     timelineData.sort((a, b) => a.date - b.date);
 
     // Create scales
-    const xScale = d3.scaleTime()
-      .domain([startDate, endDate])
-      .range([0, width]);
+    // const xScale = d3.scaleTime()
+    //   .domain([startDate, endDate])
+    //   .range([0, width]);
 
     const colorScale = d3.scaleSequential()
       .domain([0, d3.max(timelineData, d => d.fatalities)])

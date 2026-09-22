@@ -136,7 +136,7 @@ const HeatmapVisualization = ({ data }) => {
       map.removeControl(legend);
       // map.off('zoomend');
     };
-  }, [map, data,]);
+  }, [map, data]);
 
   return null;
 };

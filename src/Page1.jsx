@@ -19,7 +19,7 @@ const MapWithGeofencingSingle = () => {
   const [allDates, setAllDates] = useState([]);;
   const mapRef = useRef(null);
   //marker reference on map
-  const [map, setMap] = useState(null);
+  // const [map, setMap] = useState(null);
 
   // Fetch GeoJSON data
   useEffect(() => {
