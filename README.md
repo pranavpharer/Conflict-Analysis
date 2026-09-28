@@ -79,7 +79,7 @@ cd Conflict-Analysis
 ```
 npm ci
 ```
-~npm ci~ installs the exact dependency versions recorded in ~package-lock.json~
+npm ci installs the exact dependency versions recorded in package-lock.json
 ```
 npm start
 ```
